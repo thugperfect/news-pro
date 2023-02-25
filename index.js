@@ -164,7 +164,7 @@ function home(){
      
      
          
-        await delay(2000)
+        await delay(5000)
         img[i].style.display="none";
 
     }
