@@ -1,7 +1,5 @@
 # news-pro
-this is just a news arcticle web page which is made interactive
-
-#2
+This is just a news arcticle web page which is made interactive
 
 --WITH DARK MODE
 
