@@ -1,6 +1,5 @@
 
 
-
 function darkmode(flag){
     let a=document.getElementById("darkmode");
     let b= document.getElementsByClassName("navbtn");
@@ -151,7 +150,9 @@ function home(){
 }
 
  async function change(){
-     var news=["Axar Patel and Ravichandran Ashwin added another significant chapter to India's lower-order fightbacks as their priceless 114-run eighth-wicket partnership put the hosts on an even keel against Australia on an engrossing second day of the second Test here on Saturday. Thanks to Axar's invaluable 74 off 115 balls and Ashwin's 37 off 71 balls, India, who were in complete mess at 139/7, recovered well to end their first innings at 262 in 83.3 overs, just one run behind Australia's 263.<br><a href=''>[Read More...]</a>",
+
+
+    var news=["Axar Patel and Ravichandran Ashwin added another significant chapter to India's lower-order fightbacks as their priceless 114-run eighth-wicket partnership put the hosts on an even keel against Australia on an engrossing second day of the second Test here on Saturday. Thanks to Axar's invaluable 74 off 115 balls and Ashwin's 37 off 71 balls, India, who were in complete mess at 139/7, recovered well to end their first innings at 262 in 83.3 overs, just one run behind Australia's 263.<br><a href=''>[Read More...]</a>",
 "The high-voltage contest between Roman Reigns and Sami Zayn in 2023 WWE Elimination Chamber match will soon get underway on Saturday in Montreal, Canada. Fans are eagerly waiting to see if the former Honorary UCE can halt the juggernaut of Reigns who recently completed 900 days since becoming the WWE Universal Champion in 2020.<br><a href=''>[Read More...]</a>",
 "New Delhi: North India's first nuclear power plant will come up in Haryana in the village of Gorakhpur in Fatehabad district, 150 km north of the national capital, Union Minister of State for Science and Technology Jitendra Singh has said.<br><br>Announcing it in New Delhi on Saturday, Union Minister of State for Science and Technology, and Earth Sciences Jitendra Singh said that during Prime Minister Narendra Modi's regime, one of the major achievements would be the installation of nuclear/atomic energy plants in other parts of the country, which were earlier confined mostly to south Indian states like Tamil Nadu and Andhra Pradesh or in the west in Maharashtra, according to a statement from the Department of Atomic Energy.<br><a href=''>[Read More...]</a>",
 "Finance minister Nirmala Sitharaman on Saturday announced that the central government will clear the entire dues of the pending balance of the GST compensation, as decided at the 49th GST Council meeting. `As of May 31, we cleared all the dues. There was something left in the name of dues for June. Even that is getting cleared,` Nirmala Sitharaman said announcing the clearance of all GST dues to the tune of ₹16,982 crore. <br><br>The amount is not available in the compensation fund as of today, but it will be released from the government's own resources. The same amount will be recouped from the future compensation cess collection, Sitharaman said. <br><br> `With this, the centre would clear the entire provisionally admissable compensation cess, dues for 5 years as envisaged in the GST compensation to states Act 2017,` the finance minister announced.<br><a href=''>[Read More...]</a>"]
@@ -184,16 +185,26 @@ var bulletnews=["‘Roman Reigns, listen to me closely…’: Sami Zayn's blunt 
 "Vivo launches Y56 5G smartphone at ₹20,000. Check features & specifications",
 "Violence in Kashmir, Maoist-hit areas reduce by 80% under Modi govt: Amit Shah",
 "New revelations on the long history of our nation",
-"UKPSC Junior Assistant Admit Card 2022 out at ukpsc.net.in, download link here"]
+"UKPSC Junior Assistant Admit Card 2022 out at ukpsc.net.in, download link here","fuck off bitch","shut the fuck up"]
 
 var bullet = document.getElementsByClassName("bullet");
 var ab;
+var speednews = document.getElementById("speednews");
 
-for(ab=0;ab<bullet.length;ab++){
-    bullet[ab].innerHTML=bulletnews[ab]
 
-}
-    
+    for(ai =0;ai<bulletnews.length;ai++){
+        let light = document.createElement("hr")
+        light.class="light";
+        let bull = document.createElement("div")
+        bull.class="bullet";
+        bull.innerHTML=bulletnews[ai]
+        speednews.appendChild(light);
+        speednews.appendChild(bull);
+        
+    }
+   
+
+
     let img=document.getElementsByClassName("fox1");
    
 
@@ -217,12 +228,6 @@ for(ab=0;ab<bullet.length;ab++){
      }
 
     }
-
-
-
-
-
-
 
 
 const delay = async (ms) => new Promise(resolve => setTimeout(resolve, ms))
